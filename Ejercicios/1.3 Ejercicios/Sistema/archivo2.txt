@@ -1,0 +1,3 @@
+Este es el primer contenido de mi archivo 2
+
+acabo de modificar este texto 
