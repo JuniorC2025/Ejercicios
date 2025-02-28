@@ -1,0 +1,180 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background:hsl(148, 38%, 91%);
+}
+
+
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.container header {
+  font-size: 2rem;
+  color: hsl(187, 24%, 22%);
+  font-weight: 600;
+  text-align: left;
+}
+.container .form {
+  margin-top: -20px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 18px;
+}
+.input-box label {
+  color:  hsl(169, 82%, 27%);
+}
+.prueba {
+    color:  hsl(169, 82%, 27%);
+  }
+
+  #exampleFormControlTextarea1 {
+    color: hsl(169, 82%, 27%);
+  }
+  
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color:  hsl(169, 82%, 27%);
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0  hsl(169, 82%, 27%);
+}
+.form .column {
+  display: flex;
+  column-gap: 10px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+
+.gender-box h3 {
+  color: hsl(169, 82%, 27%);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: hsl(186, 15%, 59%);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: hsl(169, 82%, 27%);
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: hsl(186, 15%, 59%);
+  font-size: 1rem;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: hsl(169, 82%, 27%);
+}
+.form button:hover {
+  background: hsl(169, 82%, 27%);
+}
+
+
+
+.prue input[type="radio"]{
+  display: none;
+}
+
+.prue label {
+ position: relative;
+ color: hsl(169, 82%, 27%);
+ font-family: 'Poppins', sans-serif;
+ font-size: 16px;
+ border: 2px solid hsl(169, 82%, 27%);
+ border-radius: 5px;
+ padding: 10px 50px; 
+ display: flex;
+ align-items: center;
+ cursor: pointer;
+}
+
+.prue label:before{
+
+  content: "";
+  height: 20px;
+  width: 20px;
+  border: 2px solid hsl(187, 24%, 22%);
+  border-radius: 50%;
+  margin-right: 20px;
+}
+/*Cambio del fondo*/
+.prue input[type="radio"]:checked + label {
+  background-color: hsl(148, 38%, 91%);
+  color: hsl(169, 82%, 27%);
+}
+
+.prue input[type="radio"]:checked + label:before {
+  height: 20px;
+  width: 20px;
+  border: 4px solid hsl(0, 0%, 100%);
+  background-color: hsl(187, 24%, 22%);
+}
+
+
+
+/*Responsive*/
+@media screen and (max-width: 375px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
